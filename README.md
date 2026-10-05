@@ -86,3 +86,21 @@ Provider-neutral functions fail closed until credentials and a concrete endpoint
 - Verified destination, guide, lodge, tour, price, cancellation, tax and availability data.
 - Legal/privacy/terms/refund content and operational contact information.
 - Human QA of routes, accessibility, security, payments, booking reconciliation and partner obligations before launch.
+
+
+## Free/open provider defaults + Strapi editorial system
+The codebase now prefers free/open components where they are appropriate:
+- Maps: OpenStreetMap data with a MapLibre-compatible renderer. Respect OSM attribution and tile-service policies; OSM data is free/open but the OSM Foundation does not provide unlimited free production tiles.
+- Weather: Open-Meteo is implemented as a zero-key development/non-commercial option. Its free hosted tier is not the production commercial entitlement for a travel business, so keep the provider adapter and choose a commercial plan/self-hosting/alternative before launch.
+- Translation: self-hosted LibreTranslate (no vendor API key required on your own instance).
+- Speech: self-hosted Piper TTS; review each voice model's license before distribution.
+- Biodiversity: iNaturalist API for public reference/observation discovery, subject to API recommended practices and rate limits.
+- CMS: self-hosted Strapi Community.
+
+### Strapi blog
+A Strapi 5 project lives under `/strapi`. It includes `Article` and `Content Goal` content types. Articles support draft/publish, category, media, SEO metadata, keywords, AI-origin labeling, trend/season signals, business goal and editor notes. The React routes are `/blog` and `/blog/:slug`. Configure `VITE_STRAPI_URL`.
+
+### AI editorial engine
+The super-admin route `/admin/content` loads seasonal context and active Strapi business goals and creates reviewable content-generation jobs. Cloud Functions expose `contentSignals`, `generateBlogDraft` and `pushDraftToStrapi`. Required server secrets are `STRAPI_API_TOKEN` and `CONTENT_LLM_API_KEY`; `STRAPI_URL` is a server environment value. The LLM provider endpoint/model mapper remains provider-neutral so a free/self-hosted model or paid API can be selected without changing the CMS/front end.
+
+Generated content must remain draft-first. Do not automatically publish factual claims about wildlife sightings, conservation partners, prices, availability, safety, visas, health, communities or cultural practices without verification.
