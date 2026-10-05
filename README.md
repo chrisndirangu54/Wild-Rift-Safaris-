@@ -24,3 +24,20 @@ The Firebase web configuration is public by design; **never** put service-accoun
 Production AI itinerary and copilot (server-side LLM with grounded travel catalog and budget validation); georeferenced 3D destination twins and photogrammetry; verified live wildlife feeds/telemetry; hotel and tour inventory, payments and reservations; location-aware audio guides, AR navigation, translation and historical reconstructions; image-based species recognition with uncertainty labels; verified weather and conservation datasets; gamified biodiversity passport; customer and partner dashboards; privacy/consent, accessibility and localization.
 
 All photos currently use remote illustrative stock images; replace with licensed, accurately labeled destination media. The generated itinerary is illustrative and does not validate route feasibility, prices, weather or availability. Do not represent proposed conservation partnerships as established.
+
+
+## Phase 2 implemented
+- Destination catalog extracted into structured data with season, mood, region, story and highlights.
+- Dedicated immersive destination routes (`/destination/:id`).
+- Traveller dashboard foundation at `/me`.
+- Experience capability layer distinguishes curated content, prototypes, concepts and integrations that require partner data.
+- Expanded responsive styling for experience detail and traveller interfaces.
+
+## Recommended production sequence
+1. Configure Firebase Auth/Firestore and verify rules in the Firebase Emulator Suite.
+2. Move AI planning behind a server/Cloud Function; ground generation in a verified destination/inventory catalog.
+3. Add booking/inventory provider adapters and payment processing with server-side webhooks and idempotency.
+4. Add a CMS/admin workflow for guides, properties, conservation partners, media rights and cultural-content approval.
+5. Build geospatial/3D experiences from licensed DEM, imagery or photogrammetry rather than presenting the conceptual globe as a digital twin.
+6. Integrate weather, maps and wildlife data only from licensed/authorized sources; protect sensitive species coordinates.
+7. Add observability, consent/privacy controls, accessibility testing, localization and security review before launch.
