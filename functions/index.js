@@ -44,3 +44,8 @@ exports.recordWildlifeEvent=livingAfrica.recordWildlifeEvent;
 exports.reviewWildlifeEvent=livingAfrica.reviewWildlifeEvent;
 exports.africaRightNow=livingAfrica.africaRightNow;
 exports.registerCameraSource=livingAfrica.registerCameraSource;
+
+const automation=require('./automation');
+exports.sampleWildlifeSources=automation.sampleWildlifeSources;
+exports.buildDynamicQuests=automation.buildDynamicQuests;
+exports.evaluateAchievements=automation.evaluateAchievements;
