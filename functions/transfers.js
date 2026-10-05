@@ -1,0 +1,4 @@
+const{onCall,HttpsError}=require('firebase-functions/v2/https');const{defineSecret}=require('firebase-functions/params');const TRANSFER_KEY=defineSecret('TRANSFER_PROVIDER_API_KEY');
+function auth(req){if(!req.auth)throw new HttpsError('unauthenticated','Sign in required.')}
+exports.transferProviderStatus=onCall({secrets:[TRANSFER_KEY]},async req=>{auth(req);return{configured:Boolean(TRANSFER_KEY.value()),fallback:'Wild Ryftlands partner-driver request workflow'}});
+exports.quoteExternalTransfer=onCall({secrets:[TRANSFER_KEY]},async req=>{auth(req);if(!TRANSFER_KEY.value())throw new HttpsError('failed-precondition','External transfer provider is not configured. Use the internal partner-driver request workflow.');throw new HttpsError('unimplemented','Set the selected transfer provider endpoint and quote response mapper.');});
