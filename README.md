@@ -41,3 +41,13 @@ All photos currently use remote illustrative stock images; replace with licensed
 5. Build geospatial/3D experiences from licensed DEM, imagery or photogrammetry rather than presenting the conceptual globe as a digital twin.
 6. Integrate weather, maps and wildlife data only from licensed/authorized sources; protect sensitive species coordinates.
 7. Add observability, consent/privacy controls, accessibility testing, localization and security review before launch.
+
+
+## MVP completion pass
+The repository now includes Firebase-backed user profile creation, saved journey records, booking-request persistence, traveller and operations routes, Cloud Functions boundaries for future AI/payment providers, Storage rules, Firestore indexes, and Firebase deployment configuration.
+
+### External configuration still required
+A production deployment must supply the Firebase web configuration and enable Authentication, Firestore, Storage, Functions and App Check. The callable AI endpoint is deliberately a provider-neutral stub until a grounded model/provider is selected. The payment endpoint deliberately refuses transactions until a PCI-compliant provider (for example Stripe or an appropriate M-Pesa integration) is implemented server-side. Maps, weather, inventory, wildlife cameras/telemetry, AR, translation, species recognition and photogrammetric 3D require their respective licensed datasets/services and cannot truthfully be completed from source code alone.
+
+### Admin provisioning
+Create admin documents by UID at `admins/{uid}` from a trusted Admin SDK/server environment. Do not authorize administrators by hard-coded client email. Firestore rules protect the operations data even if a user manually navigates to `/admin`.
