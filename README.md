@@ -69,3 +69,20 @@ Activities integration scaffolding recognizes:
 Do not place these values in Vite environment variables, React source, GitHub, or Firestore. The integration console intentionally reports configured/not-configured status without returning secret values to the browser.
 
 Expedia Rapid Activities is partner/early-access dependent as of October 2026. Wild Ryftlands must therefore support local/other tour inventory as a fallback until Expedia enables the account. Lodging production use also requires Expedia partner approval/site review.
+
+
+## Code-complete integration boundary
+The application now includes UI and backend boundaries for lodging inventory, maps/AR, weather, translation, speech/audio guides, species recognition, payments and licensed 3D assets; a working Expedia Rapid Lodging callable; traveller profiles and saved journeys; booking requests; biodiversity observations with deliberately obscured location precision; an offline-first field companion; and the super-admin integration/status console.
+
+Provider-neutral functions fail closed until credentials and a concrete endpoint/response mapper are supplied. This is intentional: source code cannot determine a future vendor contract, licensed dataset schema or partner inventory identifier. Production adapters should be completed by setting the provider URL/schema and secret names, not by moving secrets into React.
+
+### Remaining non-code inputs
+- Firebase project IDs/configuration, deployment and App Check setup.
+- Expedia Rapid production approval, credentials and property IDs; Activities partner access if granted.
+- Chosen weather/maps/translation/TTS/vision providers and their credentials/endpoints.
+- M-Pesa/Stripe merchant credentials, webhook URLs and commercial settings.
+- Licensed DEM/3D Tiles/glTF/photogrammetry, destination imagery and media rights.
+- Authorized wildlife camera/telemetry feeds and conservation rules for sensitive species.
+- Verified destination, guide, lodge, tour, price, cancellation, tax and availability data.
+- Legal/privacy/terms/refund content and operational contact information.
+- Human QA of routes, accessibility, security, payments, booking reconciliation and partner obligations before launch.
