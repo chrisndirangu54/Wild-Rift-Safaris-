@@ -20,3 +20,7 @@ exports.telemetryProviders=telemetry.telemetryProviders;
 const wildVision=require('./wildVision');
 exports.analyzeWildlifeFrame=wildVision.analyzeWildlifeFrame;
 exports.wildVisionStatus=wildVision.wildVisionStatus;
+
+const quests=require('./quests');
+exports.generateTripQuest=quests.generateTripQuest;
+exports.questPolicy=quests.questPolicy;
