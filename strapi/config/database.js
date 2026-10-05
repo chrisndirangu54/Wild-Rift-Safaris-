@@ -1,0 +1,1 @@
+module.exports=({env})=>({connection:{client:env('DATABASE_CLIENT','sqlite'),connection:env('DATABASE_CLIENT','sqlite')==='sqlite'?{filename:env('DATABASE_FILENAME','.tmp/data.db')}:{connectionString:env('DATABASE_URL'),ssl:env.bool('DATABASE_SSL',false)&&{rejectUnauthorized:false}},useNullAsDefault:true}});
