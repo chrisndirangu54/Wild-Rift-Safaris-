@@ -9,6 +9,11 @@ service cloud.firestore {
   match /authorizedWildlifeSources/{id}{allow read,write: if superAdmin();}
   match /xpAwards/{id}{allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());allow write: if false;}
   match /wildlifeEvents/{id}{allow read: if signedIn() && (resource.data.reviewStatus == 'verified' || admin());allow write: if false;}
+  match /wildlifeSamples/{id}{allow read: if admin();allow write: if false;}
+  match /dynamicQuests/{id}{allow read: if signedIn();allow write: if false;}
+  match /explorerProgress/{uid}{allow read: if owner(uid) || admin();allow write: if false;}
+  match /notificationQueue/{id}{allow read: if admin();allow write: if false;}
+  match /pipelineErrors/{id}{allow read: if admin();allow write: if false;}
   match /users/{uid}{
    allow create: if owner(uid) && request.resource.data.email == request.auth.token.email;
    allow read: if owner(uid) || admin();
