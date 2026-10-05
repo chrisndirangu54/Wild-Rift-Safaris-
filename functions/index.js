@@ -38,3 +38,9 @@ const progression=require('./progression');
 exports.getExplorerProgress=progression.getExplorerProgress;
 exports.awardExplorerXP=progression.awardExplorerXP;
 exports.xpPolicy=progression.xpPolicy;
+
+const livingAfrica=require('./livingAfrica');
+exports.recordWildlifeEvent=livingAfrica.recordWildlifeEvent;
+exports.reviewWildlifeEvent=livingAfrica.reviewWildlifeEvent;
+exports.africaRightNow=livingAfrica.africaRightNow;
+exports.registerCameraSource=livingAfrica.registerCameraSource;
