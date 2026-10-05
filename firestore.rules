@@ -7,6 +7,7 @@ service cloud.firestore {
   function superAdmin(){return signedIn() && request.auth.token.superAdmin == true;}
   match /admins/{uid}{allow read: if owner(uid) || admin();allow write: if false;}
   match /authorizedWildlifeSources/{id}{allow read,write: if superAdmin();}
+  match /xpAwards/{id}{allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());allow write: if false;}
   match /users/{uid}{
    allow create: if owner(uid) && request.resource.data.email == request.auth.token.email;
    allow read: if owner(uid) || admin();
