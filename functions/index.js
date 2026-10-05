@@ -33,3 +33,8 @@ exports.createEmergencyRequest=safety.createEmergencyRequest;
 const storyStudio=require('./storyStudio');
 exports.storyAiStatus=storyStudio.storyAiStatus;
 exports.storyAiDraft=storyStudio.storyAiDraft;
+
+const progression=require('./progression');
+exports.getExplorerProgress=progression.getExplorerProgress;
+exports.awardExplorerXP=progression.awardExplorerXP;
+exports.xpPolicy=progression.xpPolicy;
