@@ -1,3 +1,1 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-export default defineConfig({ plugins:[react()] });
+import{defineConfig}from'vite';import react from'@vitejs/plugin-react';import{viteStaticCopy}from'vite-plugin-static-copy';const cesium='node_modules/cesium/Build/Cesium';export default defineConfig({define:{CESIUM_BASE_URL:JSON.stringify('/cesium')},plugins:[react(),viteStaticCopy({targets:[{src:cesium+'/Workers',dest:'cesium'},{src:cesium+'/ThirdParty',dest:'cesium'},{src:cesium+'/Assets',dest:'cesium'},{src:cesium+'/Widgets',dest:'cesium'}]})]});
