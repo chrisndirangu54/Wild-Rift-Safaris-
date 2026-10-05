@@ -8,3 +8,5 @@ const providers=require('./providers');exports.providerStatus=providers.provider
 const contentEngine=require('./contentEngine');exports.contentSignals=contentEngine.contentSignals;exports.generateBlogDraft=contentEngine.generateBlogDraft;exports.pushDraftToStrapi=contentEngine.pushDraftToStrapi;
 
 const flights=require('./flights');exports.searchFlights=flights.searchFlights;exports.refreshFlightOffer=flights.refreshFlightOffer;exports.flightBookingReadiness=flights.flightBookingReadiness;
+
+const transfers=require('./transfers');exports.transferProviderStatus=transfers.transferProviderStatus;exports.quoteExternalTransfer=transfers.quoteExternalTransfer;
