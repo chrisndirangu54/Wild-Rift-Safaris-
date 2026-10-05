@@ -4,3 +4,5 @@ exports.createPaymentIntent=onCall({enforceAppCheck:true},async(req)=>{if(!req.a
 const admin=require('./admin');const expedia=require('./expedia');exports.bootstrapAdmin=admin.bootstrapAdmin;exports.integrationStatus=admin.integrationStatus;exports.integrationCatalog=admin.integrationCatalog;exports.expediaLodgingAvailability=expedia.expediaLodgingAvailability;
 
 const providers=require('./providers');exports.providerStatus=providers.providerStatus;exports.weatherContext=providers.weatherContext;exports.translateGuide=providers.translateGuide;exports.synthesizeGuide=providers.synthesizeGuide;exports.identifySpecies=providers.identifySpecies;
+
+const contentEngine=require('./contentEngine');exports.contentSignals=contentEngine.contentSignals;exports.generateBlogDraft=contentEngine.generateBlogDraft;exports.pushDraftToStrapi=contentEngine.pushDraftToStrapi;
