@@ -6,3 +6,5 @@ const admin=require('./admin');const expedia=require('./expedia');exports.bootst
 const providers=require('./providers');exports.providerStatus=providers.providerStatus;exports.weatherContext=providers.weatherContext;exports.translateGuide=providers.translateGuide;exports.synthesizeGuide=providers.synthesizeGuide;exports.identifySpecies=providers.identifySpecies;
 
 const contentEngine=require('./contentEngine');exports.contentSignals=contentEngine.contentSignals;exports.generateBlogDraft=contentEngine.generateBlogDraft;exports.pushDraftToStrapi=contentEngine.pushDraftToStrapi;
+
+const flights=require('./flights');exports.searchFlights=flights.searchFlights;exports.refreshFlightOffer=flights.refreshFlightOffer;exports.flightBookingReadiness=flights.flightBookingReadiness;
