@@ -23,7 +23,12 @@ service cloud.firestore {
    allow update,delete: if admin();
   }
   match /inquiries/{id}{allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.status == 'new' && request.resource.data.createdAt == request.time;allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());allow update,delete: if admin();}
-  match /tripStories/{id}{
+  match /storyRenders/{id}{
+ allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.visibility == 'private' && request.resource.data.publishConsent == false && request.resource.data.status == 'director-plan' && request.resource.data.createdAt == request.time;
+ allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());
+ allow update,delete: if signedIn() && (resource.data.userId == request.auth.uid || admin());
+}
+match /tripStories/{id}{
  allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.visibility == 'private' && request.resource.data.publishConsent == false && request.resource.data.mapPrecision == 'generalized' && request.resource.data.createdAt == request.time;
  allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());
  allow update,delete: if signedIn() && (resource.data.userId == request.auth.uid || admin());
