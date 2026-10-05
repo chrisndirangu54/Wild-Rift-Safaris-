@@ -16,3 +16,7 @@ const expediaCars=require('./expediaCars');const expediaFlights=require('./exped
 const telemetry=require('./telemetry');
 exports.movebankPublicStudy=telemetry.movebankPublicStudy;
 exports.telemetryProviders=telemetry.telemetryProviders;
+
+const wildVision=require('./wildVision');
+exports.analyzeWildlifeFrame=wildVision.analyzeWildlifeFrame;
+exports.wildVisionStatus=wildVision.wildVisionStatus;
