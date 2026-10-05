@@ -28,6 +28,7 @@ exports.questPolicy=quests.questPolicy;
 const safety=require('./safety');
 exports.wearableCapabilities=safety.wearableCapabilities;
 exports.emergencyEscalationStatus=safety.emergencyEscalationStatus;
+exports.createEmergencyRequest=safety.createEmergencyRequest;
 
 const storyStudio=require('./storyStudio');
 exports.storyAiStatus=storyStudio.storyAiStatus;
