@@ -4,7 +4,9 @@ service cloud.firestore {
   function signedIn(){return request.auth != null;}
   function owner(uid){return signedIn() && request.auth.uid == uid;}
   function admin(){return signedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid));}
+  function superAdmin(){return signedIn() && request.auth.token.superAdmin == true;}
   match /admins/{uid}{allow read: if owner(uid) || admin();allow write: if false;}
+  match /authorizedWildlifeSources/{id}{allow read,write: if superAdmin();}
   match /users/{uid}{
    allow create: if owner(uid) && request.resource.data.email == request.auth.token.email;
    allow read: if owner(uid) || admin();
@@ -39,18 +41,18 @@ match /tripStories/{id}{
  allow update,delete: if signedIn() && (resource.data.userId == request.auth.uid || admin());
 }
 match /questEvidence/{id}{
- allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.visibility == 'private' && request.resource.data.publishConsent == false && request.resource.data.precision == 'obscured' && request.resource.data.verification == 'unverified' && request.resource.data.guideVouches == 0 && request.resource.data.createdAt == request.time;
+ allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.visibility == 'private' && request.resource.data.publishConsent == false && request.resource.data.precision == 'obscured' && request.resource.data.verification == 'unverified' && request.resource.data.guideVouches == 0 && request.resource.data.xpAwarded == 0 && request.resource.data.createdAt == request.time;
  allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());
  allow update: if admin() || (signedIn() && resource.data.userId == request.auth.uid && request.resource.data.userId == resource.data.userId && request.resource.data.verification == resource.data.verification && request.resource.data.guideVouches == resource.data.guideVouches);
  allow delete: if signedIn() && (resource.data.userId == request.auth.uid || admin());
 }
 match /emergencyRequests/{id}{
- allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.status == 'requested' && request.resource.data.createdAt == request.time;
+ allow create: if false;
  allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());
  allow update,delete: if admin();
 }
 match /sightings/{id}{
- allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.precision == 'obscured' && request.resource.data.verification == 'unverified' && request.resource.data.guideVouches == 0 && request.resource.data.createdAt == request.time;
+ allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.precision == 'obscured' && request.resource.data.verification == 'unverified' && request.resource.data.guideVouches == 0 && request.resource.data.xp == 0 && request.resource.data.createdAt == request.time;
  allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());
  allow update,delete: if admin();
 }
