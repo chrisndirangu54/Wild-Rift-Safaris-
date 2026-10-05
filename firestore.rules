@@ -23,7 +23,12 @@ service cloud.firestore {
    allow update,delete: if admin();
   }
   match /inquiries/{id}{allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.status == 'new' && request.resource.data.createdAt == request.time;allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());allow update,delete: if admin();}
-  match /sightings/{id}{
+  match /emergencyRequests/{id}{
+ allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.status == 'requested' && request.resource.data.createdAt == request.time;
+ allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());
+ allow update,delete: if admin();
+}
+match /sightings/{id}{
  allow create: if signedIn() && request.resource.data.userId == request.auth.uid && request.resource.data.email == request.auth.token.email && request.resource.data.precision == 'obscured' && request.resource.data.verification == 'unverified' && request.resource.data.guideVouches == 0 && request.resource.data.createdAt == request.time;
  allow read: if signedIn() && (resource.data.userId == request.auth.uid || admin());
  allow update,delete: if admin();
