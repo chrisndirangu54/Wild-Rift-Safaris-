@@ -1,0 +1,8 @@
+export const liveWildCameras=[
+{id:'mpala-river',name:'Mpala African River Wildlife',region:'Laikipia County',country:'Kenya',provider:'Explore.org',kind:'River / watering-hole corridor',url:'https://explore.org/livecams/explore-all-cams/african-river-wildlife-camera',cesium:{lng:36.9,lat:.3},wildlife:['Elephant','Giraffe','Kudu'],processing:'external-only'},
+{id:'tortilis',name:'Tortilis Camp',region:'Amboseli',country:'Kenya',provider:'Africam',kind:'Waterhole',url:'https://africam.com/lodge/tortilis/',cesium:{lng:37.2,lat:-2.65},wildlife:['Elephant','Zebra','Giraffe','Antelope'],processing:'external-only'},
+{id:'campi',name:'Campi ya Kanzi',region:'Chyulu Hills',country:'Kenya',provider:'Africam',kind:'Waterhole',url:'https://africam.com/lodge/campi-ya-kanzi/',cesium:{lng:37.6,lat:-2.75},wildlife:['Zebra','Giraffe','Antelope','Lion'],processing:'external-only'},
+{id:'lentorre',name:'Lentorre Lodge',region:'South Central Rift Valley',country:'Kenya',provider:'Africam',kind:'Waterhole',url:'https://africam.com/lodge/lentorre-lodge/',cesium:{lng:36.1,lat:-2.1},wildlife:['Lion','Leopard','Caracal','Hyena'],processing:'external-only'},
+{id:'angama-amboseli',name:'Angama Amboseli',region:'Amboseli',country:'Kenya',provider:'Africam',kind:'Wildlife live stream',url:'https://africam.com/lodge/angama-amboseli/',cesium:{lng:37.3,lat:-2.7},wildlife:['Elephant','Giraffe','Zebra','Wildebeest'],processing:'external-only'},
+{id:'oldonyo',name:'ol Donyo Lodge',region:'Chyulu Hills',country:'Kenya',provider:'Africam',kind:'Savannah live stream',url:'https://africam.com/lodge/ol-donyo-lodge/',cesium:{lng:37.7,lat:-2.5},wildlife:['Savannah wildlife'],processing:'external-only'}
+];
