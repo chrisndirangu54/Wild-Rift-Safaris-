@@ -51,3 +51,21 @@ A production deployment must supply the Firebase web configuration and enable Au
 
 ### Admin provisioning
 Create admin documents by UID at `admins/{uid}` from a trusted Admin SDK/server environment. Do not authorize administrators by hard-coded client email. Firestore rules protect the operations data even if a user manually navigates to `/admin`.
+
+
+## Expedia + super-admin integration
+Wild Ryftlands now contains a server-side Expedia Rapid Lodging availability adapter. It generates Rapid signature authentication inside Cloud Functions and defaults to Expedia's test environment. Set `EXPEDIA_ENV=production` only after Expedia approves the partner implementation for production.
+
+The owner bootstrap identity is `chrisndirangu54@gmail.com`. The callable bootstrap function verifies the authenticated token email before assigning `admin` and `superAdmin` custom claims and recording the UID under `admins/{uid}`. Sign in with that exact verified Google/Firebase account, visit `/admin/integrations`, and run the bootstrap action once.
+
+Secrets required for lodging:
+- `EXPEDIA_API_KEY`
+- `EXPEDIA_SHARED_SECRET`
+
+Activities integration scaffolding recognizes:
+- `EXPEDIA_OAUTH_CLIENT_ID`
+- `EXPEDIA_OAUTH_CLIENT_SECRET`
+
+Do not place these values in Vite environment variables, React source, GitHub, or Firestore. The integration console intentionally reports configured/not-configured status without returning secret values to the browser.
+
+Expedia Rapid Activities is partner/early-access dependent as of October 2026. Wild Ryftlands must therefore support local/other tour inventory as a fallback until Expedia enables the account. Lodging production use also requires Expedia partner approval/site review.
