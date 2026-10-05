@@ -10,3 +10,5 @@ const contentEngine=require('./contentEngine');exports.contentSignals=contentEng
 const flights=require('./flights');exports.searchFlights=flights.searchFlights;exports.refreshFlightOffer=flights.refreshFlightOffer;exports.flightBookingReadiness=flights.flightBookingReadiness;
 
 const transfers=require('./transfers');exports.transferProviderStatus=transfers.transferProviderStatus;exports.quoteExternalTransfer=transfers.quoteExternalTransfer;
+
+const expediaCars=require('./expediaCars');const expediaFlights=require('./expediaFlights');exports.searchExpediaCars=expediaCars.searchExpediaCars;exports.expediaFlightStatus=expediaFlights.expediaFlightStatus;exports.searchExpediaFlights=expediaFlights.searchExpediaFlights;
