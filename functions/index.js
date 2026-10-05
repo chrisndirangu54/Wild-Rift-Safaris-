@@ -12,3 +12,7 @@ const flights=require('./flights');exports.searchFlights=flights.searchFlights;e
 const transfers=require('./transfers');exports.transferProviderStatus=transfers.transferProviderStatus;exports.quoteExternalTransfer=transfers.quoteExternalTransfer;
 
 const expediaCars=require('./expediaCars');const expediaFlights=require('./expediaFlights');exports.searchExpediaCars=expediaCars.searchExpediaCars;exports.expediaFlightStatus=expediaFlights.expediaFlightStatus;exports.searchExpediaFlights=expediaFlights.searchExpediaFlights;
+
+const telemetry=require('./telemetry');
+exports.movebankPublicStudy=telemetry.movebankPublicStudy;
+exports.telemetryProviders=telemetry.telemetryProviders;
