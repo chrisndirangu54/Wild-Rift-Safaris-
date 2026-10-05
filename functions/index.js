@@ -24,3 +24,7 @@ exports.wildVisionStatus=wildVision.wildVisionStatus;
 const quests=require('./quests');
 exports.generateTripQuest=quests.generateTripQuest;
 exports.questPolicy=quests.questPolicy;
+
+const safety=require('./safety');
+exports.wearableCapabilities=safety.wearableCapabilities;
+exports.emergencyEscalationStatus=safety.emergencyEscalationStatus;
