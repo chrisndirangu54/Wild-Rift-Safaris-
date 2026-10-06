@@ -49,3 +49,8 @@ const automation=require('./automation');
 exports.sampleWildlifeSources=automation.sampleWildlifeSources;
 exports.buildDynamicQuests=automation.buildDynamicQuests;
 exports.evaluateAchievements=automation.evaluateAchievements;
+
+const twinGraph=require('./twinGraph');
+exports.twinDestination=twinGraph.twinDestination;
+exports.twinPlan=twinGraph.twinPlan;
+exports.twinContext=twinGraph.twinContext;
