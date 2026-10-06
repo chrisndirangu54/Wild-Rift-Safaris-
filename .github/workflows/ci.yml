@@ -37,3 +37,12 @@ jobs:
       - run: node --check expedia.js
       - run: node --check ingestionPolicy.js
       - run: node --check extractionWorkers.js
+
+  workers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m py_compile services/extractor/app.py services/geospatial/app.py
