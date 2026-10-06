@@ -27,3 +27,6 @@ jobs:
           cache-dependency-path: functions/package-lock.json
       - run: npm install --no-audit --no-fund
       - run: node --check index.js
+      - run: node --check automation.js
+      - run: node --check livingAfrica.js
+      - run: node --check wildVision.js
