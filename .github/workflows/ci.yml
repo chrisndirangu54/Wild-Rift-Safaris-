@@ -32,3 +32,6 @@ jobs:
       - run: node --check wildVision.js
       - run: node --check twinGraph.js
       - run: node --check graphIngestion.js
+      - run: node --check graphConnectors.js
+      - run: node --check connectorAutomation.js
+      - run: node --check expedia.js
