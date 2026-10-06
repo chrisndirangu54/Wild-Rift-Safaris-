@@ -31,3 +31,4 @@ jobs:
       - run: node --check livingAfrica.js
       - run: node --check wildVision.js
       - run: node --check twinGraph.js
+      - run: node --check graphIngestion.js
