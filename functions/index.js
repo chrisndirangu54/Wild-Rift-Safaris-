@@ -54,3 +54,9 @@ const twinGraph=require('./twinGraph');
 exports.twinDestination=twinGraph.twinDestination;
 exports.twinPlan=twinGraph.twinPlan;
 exports.twinContext=twinGraph.twinContext;
+
+const graphIngestion=require('./graphIngestion');
+exports.ingestGraphNode=graphIngestion.ingestGraphNode;
+exports.ingestGraphEdge=graphIngestion.ingestGraphEdge;
+exports.reviewGraphRecord=graphIngestion.reviewGraphRecord;
+exports.graphIngestionSchema=graphIngestion.graphIngestionSchema;
