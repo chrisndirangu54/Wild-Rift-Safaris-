@@ -30,3 +30,4 @@ jobs:
       - run: node --check automation.js
       - run: node --check livingAfrica.js
       - run: node --check wildVision.js
+      - run: node --check twinGraph.js
