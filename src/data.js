@@ -14,3 +14,4 @@ export const experienceModes=[
 {title:'Grounded Wellness',status:'Curated',copy:'Forest, water, desert, silence, movement and restorative travel.'},
 {title:'Biodiversity Passport',status:'Prototype',copy:'Log responsibly observed species and landscapes without exposing sensitive locations.'}
 ];
+export const destinationGraphSchema={version:1,nodeTypes:['destination','ecosystem','species','geology','culture','history','attraction','hotel','activity','guide','live-event','quest','journey'],edgeTypes:['HAS_ECOSYSTEM','MAY_SUPPORT_SPECIES','HAS_GEOLOGY','HAS_CULTURE','HAS_HISTORY','HAS_ATTRACTION','HAS_HOTEL','OFFERS_ACTIVITY','SUPPORTED_BY_GUIDE','HAS_LIVE_EVENT','HAS_QUEST','PART_OF_JOURNEY'],trust:{official:6,partner:5,guide:4,archive:4,traveller:3,ai:2},wildlifePrecision:'generalized',culturePolicy:'community-reviewed-preferred'};
