@@ -71,3 +71,10 @@ exports.reviewGraphCandidate=graphConnectors.reviewGraphCandidate;
 const connectorAutomation=require('./connectorAutomation');
 exports.syncVerifiedGuides=connectorAutomation.syncVerifiedGuides;
 exports.processGraphIngestionJobs=connectorAutomation.processGraphIngestionJobs;
+
+const ingestionPolicy=require('./ingestionPolicy');
+exports.registerIngestionHost=ingestionPolicy.registerIngestionHost;
+exports.queueRemoteSensingJob=ingestionPolicy.queueRemoteSensingJob;
+const extractionWorkers=require('./extractionWorkers');
+exports.processControlledUrls=extractionWorkers.processControlledUrls;
+exports.processGeospatialJobs=extractionWorkers.processGeospatialJobs;
