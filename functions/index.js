@@ -60,3 +60,14 @@ exports.ingestGraphNode=graphIngestion.ingestGraphNode;
 exports.ingestGraphEdge=graphIngestion.ingestGraphEdge;
 exports.reviewGraphRecord=graphIngestion.reviewGraphRecord;
 exports.graphIngestionSchema=graphIngestion.graphIngestionSchema;
+
+const graphConnectors=require('./graphConnectors');
+exports.ingestGeoJSON=graphConnectors.ingestGeoJSON;
+exports.ingest3DAsset=graphConnectors.ingest3DAsset;
+exports.ingestPartnerInventory=graphConnectors.ingestPartnerInventory;
+exports.ingestGuideApplication=graphConnectors.ingestGuideApplication;
+exports.ingestDocumentCandidates=graphConnectors.ingestDocumentCandidates;
+exports.reviewGraphCandidate=graphConnectors.reviewGraphCandidate;
+const connectorAutomation=require('./connectorAutomation');
+exports.syncVerifiedGuides=connectorAutomation.syncVerifiedGuides;
+exports.processGraphIngestionJobs=connectorAutomation.processGraphIngestionJobs;
