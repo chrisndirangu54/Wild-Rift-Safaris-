@@ -55,3 +55,31 @@
 .flybyToolbar button:disabled{opacity:.45;cursor:not-allowed}
 .flybyToolbar [role="status"]{flex:1 1 220px;font-size:12px;color:#c1cbbb}
 @media(max-width:640px){.flybyToolbar{align-items:stretch;flex-direction:column}.flybyToolbar select,.flybyToolbar button{width:100%}}
+
+
+/* In-globe exploration and journey workspace */
+.globeWorkspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(310px,365px);align-items:stretch;min-height:610px}
+.globeWorkspace>.cesiumWorld{min-height:610px;height:100%;min-width:0}
+.globeStudio{background:#17251e;color:#eee9dd;border:1px solid #9a96734a;padding:23px 22px;max-height:720px;overflow:auto}
+.globeStudioHeading .eyebrow{margin-bottom:10px}
+.globeStudioHeading h2{font-size:30px;margin-bottom:10px}
+.globeStudioHeading p{color:#c4cbbd;font-size:12px}
+.globeStudioPick,.globeStudioFields label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:#d5c6a5}
+.globeStudio select,.globeStudio input{background:#0e1b15;border:1px solid #687c6e;color:#f8f3e9;border-radius:3px;padding:10px;width:100%;min-width:0}
+.globeStudioTabs{display:flex;gap:4px;flex-wrap:wrap;margin:20px 0 17px;border-bottom:1px solid #9a967355;padding-bottom:10px}
+.globeStudioTabs button{border:0;background:transparent;color:#bfcbbd;font-size:12px;padding:9px 8px}
+.globeStudioTabs button[aria-selected="true"]{background:#d5b981;color:#14231a}
+.globeStudio section h3{font-size:16px;margin:15px 0 8px;font-family:'DM Sans',sans-serif}
+.globeStudio section p,.globeStudio section li{font-size:13px;line-height:1.7;color:#d1d8cb}
+.globeStudio section ul{padding-left:20px}
+.globeStudio section button{border:1px solid #bca67a;background:#c5a873;color:#15241b;padding:10px 12px;font-weight:700;margin:7px 0}
+.globeStudio section button:disabled{opacity:.45;cursor:not-allowed}
+.globeStudio .globeStudioNote{font-size:11px;color:#aebbac;margin-top:13px}
+.globeStudioFields{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0}
+.globeStops{padding-left:24px;display:flex;flex-direction:column;gap:9px}
+.globeStops li{padding:9px 0;border-bottom:1px solid #ffffff22}
+.globeStops li span{display:block}.globeStops li strong{font-size:12px}.globeStops li small{display:block;color:#afc1af}
+.globeStops li div{display:flex;gap:6px}
+.globeStudio section .globeStops button{padding:4px 9px;margin:4px 0}
+@media(max-width:900px){.globeWorkspace{grid-template-columns:1fr}.globeWorkspace>.cesiumWorld{min-height:500px;height:500px}.globeStudio{max-height:none;overflow:visible}}
+@media(max-width:520px){.globeStudioFields{grid-template-columns:1fr}}
