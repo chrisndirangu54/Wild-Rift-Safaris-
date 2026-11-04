@@ -1,4 +1,5 @@
 import React,{useMemo,useState} from 'react';
+import {Link} from 'react-router-dom';
 import {destinationCatalog} from './data';
 
 const fieldNotes={
@@ -28,6 +29,7 @@ export default function GlobeJourneyStudio({selectedId,onChoose,onRouteChange}){
  return <aside id="globe-journey-studio" className="globeStudio" aria-label="Destination knowledge and journey studio">
    <div className="globeStudioHeading"><span className="eyebrow">EXPLORE + PLAN IN 3D</span><h2>{selected?.name}</h2><p>{selected?.region} · {selected?.season}</p></div>
    <label className="globeStudioPick">Destination<select value={selected?.id||''} onChange={e=>onChoose(e.target.value)}>{destinationCatalog.map(d=><option key={d.id} value={d.id}>{d.name}</option>)}</select></label>
+   <div className="globeDestinationActions"><button type="button" onClick={()=>onChoose(selected.id)}>Explore in 3D</button><Link to={`/destination/${selected.id}`}>View full destination</Link></div>
    <div className="globeStudioTabs" role="tablist" aria-label="Explorer information">{tabs.map(x=><button type="button" key={x} role="tab" aria-selected={tab===x} onClick={()=>setTab(x)}>{x}</button>)}</div>
    {tab==='Environment'&&<section role="tabpanel"><h3>Living landscape</h3><p>{notes.environment}</p><h3>Responsible exploration</h3><p>{notes.care}</p><p className="globeStudioNote">Editorial interpretation, not live monitoring or a site-specific environmental assessment.</p><button type="button" onClick={add}>Add to my journey</button></section>}
    {tab==='Culture'&&<section role="tabpanel"><h3>People and heritage</h3><p>{notes.culture}</p><h3>Experience ideas</h3><ul>{selected?.highlights?.map(h=><li key={h}>{h}</li>)}</ul><p className="globeStudioNote">General context only. Cultural interpretation and access must be verified with community representatives and guides.</p><button type="button" onClick={add}>Add to my journey</button></section>}
