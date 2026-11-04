@@ -25,7 +25,7 @@ export default function GlobeJourneyStudio({selectedId,onChoose,onRouteChange}){
  function remove(id){updateStops(stops.filter(x=>x!==id));}
  function shift(index,delta){const next=[...stops];const j=index+delta;if(j<0||j>=next.length)return;[next[index],next[j]]=[next[j],next[index]];updateStops(next);}
  function exportJourney(){const payload={schema:'wild-ryftlands-journey-draft-v1',startDate:startDate||null,days:Number(days),travellers:Number(travellers),budgetContext:budget,stops:picked.map(d=>({id:d.id,name:d.name,lat:d.lat,lng:d.lng})),notice:'Concept only: routes, availability, prices and transfers are unverified.'};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ryftlands-journey.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
- return <aside className="globeStudio" aria-label="Destination knowledge and journey studio">
+ return <aside id="globe-journey-studio" className="globeStudio" aria-label="Destination knowledge and journey studio">
    <div className="globeStudioHeading"><span className="eyebrow">EXPLORE + PLAN IN 3D</span><h2>{selected?.name}</h2><p>{selected?.region} · {selected?.season}</p></div>
    <label className="globeStudioPick">Destination<select value={selected?.id||''} onChange={e=>onChoose(e.target.value)}>{destinationCatalog.map(d=><option key={d.id} value={d.id}>{d.name}</option>)}</select></label>
    <div className="globeStudioTabs" role="tablist" aria-label="Explorer information">{tabs.map(x=><button type="button" key={x} role="tab" aria-selected={tab===x} onClick={()=>setTab(x)}>{x}</button>)}</div>
