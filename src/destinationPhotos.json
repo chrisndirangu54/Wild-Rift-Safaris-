@@ -1,0 +1,461 @@
+{
+  "coast": [
+    {
+      "title": "Diani beach.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Diani_beach.JPG/1920px-Diani_beach.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Diani_beach.JPG",
+      "artist": "FredD",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Diani beach, Kenya",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Diani Beach - December 2023.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Diani_Beach_-_December_2023.jpg/1920px-Diani_Beach_-_December_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Diani_Beach_-_December_2023.jpg",
+      "artist": "Tall Black",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "A view of a section of the expansive Diani Beach in Diani, Kwale County, Kenya's coast line.",
+      "mime": "image/jpeg"
+    }
+  ],
+  "rift": [
+    {
+      "title": "View northeast into Great Rift Valley from Subukia lookout, Kenya.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/View_northeast_into_Great_Rift_Valley_from_Subukia_lookout%2C_Kenya.jpg/1920px-View_northeast_into_Great_Rift_Valley_from_Subukia_lookout%2C_Kenya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:View_northeast_into_Great_Rift_Valley_from_Subukia_lookout,_Kenya.jpg",
+      "artist": "Daniel Case",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Per filename. I wish it hadn't been cloudy, but there was still a lot to see",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "View southwest into Great Rift Valley from Subukia overlook, Kenya.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/View_southwest_into_Great_Rift_Valley_from_Subukia_overlook%2C_Kenya.jpg/1920px-View_southwest_into_Great_Rift_Valley_from_Subukia_overlook%2C_Kenya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:View_southwest_into_Great_Rift_Valley_from_Subukia_overlook,_Kenya.jpg",
+      "artist": "Daniel Case",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Per filename.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "The Great Rift Valley View Point - 2015-03-09 (181091553).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/The_Great_Rift_Valley_View_Point_-_2015-03-09_%28181091553%29.jpg/1920px-The_Great_Rift_Valley_View_Point_-_2015-03-09_%28181091553%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Great_Rift_Valley_View_Point_-_2015-03-09_(181091553).jpg",
+      "artist": "Daniel Aufgang",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "description": "The Great Rift Valley View Point",
+      "mime": "image/jpeg"
+    }
+  ],
+  "mara": [
+    {
+      "title": "Elephant in Maasai Mara landscape, Kenya.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Elephant_in_Maasai_Mara_landscape%2C_Kenya.jpg/1920px-Elephant_in_Maasai_Mara_landscape%2C_Kenya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Elephant_in_Maasai_Mara_landscape,_Kenya.jpg",
+      "artist": "Daniel Case",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Per filename",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Acacia tree on Maasai Mara landscape, Kenya.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Acacia_tree_on_Maasai_Mara_landscape%2C_Kenya.jpg/1920px-Acacia_tree_on_Maasai_Mara_landscape%2C_Kenya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Acacia_tree_on_Maasai_Mara_landscape,_Kenya.jpg",
+      "artist": "Daniel Case",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Per filename",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Balloon over Maasai Mara landscape, Kenya.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Balloon_over_Maasai_Mara_landscape%2C_Kenya.jpg/1920px-Balloon_over_Maasai_Mara_landscape%2C_Kenya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Balloon_over_Maasai_Mara_landscape,_Kenya.jpg",
+      "artist": "Daniel Case",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Per filename",
+      "mime": "image/jpeg"
+    }
+  ],
+  "forest": [
+    {
+      "title": "KakamegaForest.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/KakamegaForest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "https://commons.wikimedia.org/wiki/File:KakamegaForest.jpg",
+      "artist": "User:Doron",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Kakamega Forest, Kenya.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Kakamega Forest (2293443551).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Kakamega_Forest_%282293443551%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "https://commons.wikimedia.org/wiki/File:Kakamega_Forest_(2293443551).jpg",
+      "artist": "Nao Iizuka from Tokyo, Japan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Kenya",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Kakamega Forest (2294221508).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Kakamega_Forest_%282294221508%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "https://commons.wikimedia.org/wiki/File:Kakamega_Forest_(2294221508).jpg",
+      "artist": "Nao Iizuka from Tokyo, Japan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Kakamega Forest",
+      "mime": "image/jpeg"
+    }
+  ],
+  "river": [
+    {
+      "title": "Victoria Nile River, Uganda (15235696844).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Victoria_Nile_River%2C_Uganda_%2815235696844%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "https://commons.wikimedia.org/wiki/File:Victoria_Nile_River,_Uganda_(15235696844).jpg",
+      "artist": "Rod Waddington",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Uganda Natural World",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Raging Rapids on the Nile River at Itanda Falls, Jinja, Uganda 02.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Raging_Rapids_on_the_Nile_River_at_Itanda_Falls%2C_Jinja%2C_Uganda_02.jpg/1920px-Raging_Rapids_on_the_Nile_River_at_Itanda_Falls%2C_Jinja%2C_Uganda_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Raging_Rapids_on_the_Nile_River_at_Itanda_Falls,_Jinja,_Uganda_02.jpg",
+      "artist": "Ssemmanda will",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "A natural display of power at Itanda Falls, where the Nile’s rapids churn through a forested landscape in Jinja District.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Raging Rapids on the Nile River at Itanda Falls, Jinja, Uganda 06.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Raging_Rapids_on_the_Nile_River_at_Itanda_Falls%2C_Jinja%2C_Uganda_06.jpg/1920px-Raging_Rapids_on_the_Nile_River_at_Itanda_Falls%2C_Jinja%2C_Uganda_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Raging_Rapids_on_the_Nile_River_at_Itanda_Falls,_Jinja,_Uganda_06.jpg",
+      "artist": "Ssemmanda will",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "A natural display of power at Itanda Falls, where the Nile’s rapids churn through a forested landscape in Jinja District.",
+      "mime": "image/jpeg"
+    }
+  ],
+  "desert": [
+    {
+      "title": "Southern Shore of Lake Turkana, Kenya.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Southern_Shore_of_Lake_Turkana%2C_Kenya.jpg/1920px-Southern_Shore_of_Lake_Turkana%2C_Kenya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Southern_Shore_of_Lake_Turkana,_Kenya.jpg",
+      "artist": "Predatorywasp",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Southern shore of Lake Turkana, Kenya during July at approx 6:40 pm.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Sunset at the shores of Lake Turkana, Kenya.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Sunset_at_the_shores_of_Lake_Turkana%2C_Kenya.jpg/1920px-Sunset_at_the_shores_of_Lake_Turkana%2C_Kenya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunset_at_the_shores_of_Lake_Turkana,_Kenya.jpg",
+      "artist": "Gideon Lpachiwan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Sun setting at the shores of Lake Turkana,Kenya",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Lake Turkana inlets.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Lake_Turkana_inlets.jpg/1920px-Lake_Turkana_inlets.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_Turkana_inlets.jpg",
+      "artist": "Akolom",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "This picture represents the south part of lake Turkana, the entrance of a local river where the lake has overflowed.",
+      "mime": "image/jpeg"
+    }
+  ],
+  "victoria-falls": [
+    {
+      "title": "Cataratas Victoria, Zambia-Zimbabue, 2018-07-27, DD 30-34 PAN.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_30-34_PAN.jpg/1920px-Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_30-34_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg",
+      "artist": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "View of the Victoria Falls of the Zambezi River, border between Zambia (left side) and Zimbabwe (right side). The Victoria Falls is the largest sheet of falling water in the world based on its combined width of 1,708 metres (5,604 ft) and height of 108 metres (354 ft).",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Victoria Falls, Zimbabwe 01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Victoria_Falls%2C_Zimbabwe_01.jpg/1920px-Victoria_Falls%2C_Zimbabwe_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Victoria_Falls,_Zimbabwe_01.jpg",
+      "artist": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Victoria Falls, Zimbabwe",
+      "mime": "image/jpeg"
+    }
+  ],
+  "serengeti": [
+    {
+      "title": "004 Sunrise at Serengeti National Park Photo by Giles Laurent.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/004_Sunrise_at_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/1920px-004_Sunrise_at_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:004_Sunrise_at_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+      "artist": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Panoramic view of the Serengeti National Park during the golden hour of sunrise",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Serengeti-Landscape-2012.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Serengeti-Landscape-2012.JPG/1920px-Serengeti-Landscape-2012.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Serengeti-Landscape-2012.JPG",
+      "artist": "Bjørn Christian Tørrissen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "A fairly typical example of the scenery in Serengeti National Park in western Tanzania. The plains are wide and full of grass, with trees, mainly acacias, dotted around the landscape.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Serengeti Landscape with dust and tees.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Serengeti_Landscape_with_dust_and_tees.jpg/1920px-Serengeti_Landscape_with_dust_and_tees.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Serengeti_Landscape_with_dust_and_tees.jpg",
+      "artist": "Maximilian Staub",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "Serengeti Landscape with dust and tees",
+      "mime": "image/jpeg"
+    }
+  ],
+  "kilimanjaro": [
+    {
+      "title": "Climbers Barranco Wall Kilimanjaro Tanzania.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Climbers_Barranco_Wall_Kilimanjaro_Tanzania.jpg/1920px-Climbers_Barranco_Wall_Kilimanjaro_Tanzania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Climbers_Barranco_Wall_Kilimanjaro_Tanzania.jpg",
+      "artist": "Altezzatravel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Group of hikers climbing the Barranco Wall on Mount Kilimanjaro, Tanzania.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Trekking Barranco Valley Kilimanjaro Tanzania.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Trekking_Barranco_Valley_Kilimanjaro_Tanzania.jpg/1920px-Trekking_Barranco_Valley_Kilimanjaro_Tanzania.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Trekking_Barranco_Valley_Kilimanjaro_Tanzania.jpg",
+      "artist": "Altezzatravel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Trekkers walking through the Barranco Valley with giant groundsels, Mount Kilimanjaro, Tanzania.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Amboseli park- Mount Kilimanjaro.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Amboseli_park-_Mount_Kilimanjaro.jpg/1920px-Amboseli_park-_Mount_Kilimanjaro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Amboseli_park-_Mount_Kilimanjaro.jpg",
+      "artist": "Lafleursauvage",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Mount Kilimanjaro from Amboseli National Park",
+      "mime": "image/jpeg"
+    }
+  ],
+  "giza": [
+    {
+      "title": "All Gizah Pyramids.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids.jpg/1920px-All_Gizah_Pyramids.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
+      "artist": "Ricardo Liberato",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "All Giza Pyramids in one shot.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Giza Pyramids during \"Forever is Now\" exhibition.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Giza_Pyramids_during_%22Forever_is_Now%22_exhibition.jpg/1920px-Giza_Pyramids_during_%22Forever_is_Now%22_exhibition.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Giza_Pyramids_during_%22Forever_is_Now%22_exhibition.jpg",
+      "artist": "Mona Hassan Abo-Abda",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Giza Pyramids during \"Forever is Now\" exhibition",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Spelterini Pyramids.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Spelterini_Pyramids.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "https://commons.wikimedia.org/wiki/File:Spelterini_Pyramids.jpg",
+      "artist": "Eduard Spelterini",
+      "license": "Public domain",
+      "description": "Pyramids of Gizah, Egypt. From left to right: Menkaure, Kephren, Cheops. Photographed from a balloon from about 600 metres above ground.",
+      "mime": "image/jpeg"
+    }
+  ],
+  "okavango": [
+    {
+      "title": "Delta del Okavango, Botsuana, 2018-07-31, DD 01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Delta_del_Okavango%2C_Botsuana%2C_2018-07-31%2C_DD_01.jpg/1920px-Delta_del_Okavango%2C_Botsuana%2C_2018-07-31%2C_DD_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Delta_del_Okavango,_Botsuana,_2018-07-31,_DD_01.jpg",
+      "artist": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Okavango Delta, Botswana",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Okavango Delta, Botswana (2805769159).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Okavango_Delta%2C_Botswana_%282805769159%29.jpg/1920px-Okavango_Delta%2C_Botswana_%282805769159%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Okavango_Delta,_Botswana_(2805769159).jpg",
+      "artist": "Joachim Huber from Switzerland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Okavango Delta, Botswana",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Reflected Island - Okavango Delta.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Reflected_Island_-_Okavango_Delta.jpg/1920px-Reflected_Island_-_Okavango_Delta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Reflected_Island_-_Okavango_Delta.jpg",
+      "artist": "Eric Kilby",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Okavango Delta",
+      "mime": "image/jpeg"
+    }
+  ],
+  "cape": [
+    {
+      "title": "Fynbos-landscape-1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Fynbos-landscape-1.jpg/1920px-Fynbos-landscape-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Fynbos-landscape-1.jpg",
+      "artist": "Chris Eason from London",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Fynbos near Franschhoek",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Lion's Head and fynbos landscape from slopes of Table Mountain.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Lion%27s_Head_and_fynbos_landscape_from_slopes_of_Table_Mountain.jpg/1920px-Lion%27s_Head_and_fynbos_landscape_from_slopes_of_Table_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Lion%27s_Head_and_fynbos_landscape_from_slopes_of_Table_Mountain.jpg",
+      "artist": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Looking over to Lion's Head from the slopes of Table Mountain near the cableway base station",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Uphill Landscape at Coetzenburg Mountain Bike Trails, Stellenbosch, Wester Cape, South Africa.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Uphill_Landscape_at_Coetzenburg_Mountain_Bike_Trails%2C_Stellenbosch%2C_Wester_Cape%2C_South_Africa.jpg/1920px-Uphill_Landscape_at_Coetzenburg_Mountain_Bike_Trails%2C_Stellenbosch%2C_Wester_Cape%2C_South_Africa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Uphill_Landscape_at_Coetzenburg_Mountain_Bike_Trails,_Stellenbosch,_Wester_Cape,_South_Africa.jpg",
+      "artist": "Frank Taljaard of Gnostika.Blog",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "description": "Artemisia californica Less. (California sagebrush), Genista radiata (L.) Scop. (Southern greenweed), Helichrysum italicum (Roth) G.Don (Curryplant), Cytisus oromediterraneus , Artemisia filifolia Torr. (Sand-sage), Elytropappus rhinocerotis (renosterbos or \"rhinoceros bush\")",
+      "mime": "image/jpeg"
+    }
+  ],
+  "ngorongoro": [
+    {
+      "title": "Ngorongoro landscape (crater rim).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Ngorongoro_landscape_%28crater_rim%29.jpg/1920px-Ngorongoro_landscape_%28crater_rim%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Ngorongoro_landscape_(crater_rim).jpg",
+      "artist": "Jerry Michalski",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Rim of Ngorongoro Crater",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Ngorongoro Crater View1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Ngorongoro_Crater_View1.jpg/1920px-Ngorongoro_Crater_View1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Ngorongoro_Crater_View1.jpg",
+      "artist": "Eric Kilby",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "description": "Some big herds of animals are visible at the left end of the forested area.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Ngorongoro crater landscape captured by drone.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Ngorongoro_crater_landscape_captured_by_drone.jpg/1920px-Ngorongoro_crater_landscape_captured_by_drone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Ngorongoro_crater_landscape_captured_by_drone.jpg",
+      "artist": "Tasha~visual",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "An aerial photograph of the Ngorongoro Conservation Area, Tanzania, showing its spectacular landscape of rolling hills, valleys, and lake. The image was captured using a drone.lt",
+      "mime": "image/jpeg"
+    }
+  ],
+  "sahara": [
+    {
+      "title": "Untouched Place Hidden High At Tassili N Ajjer (168020831).jpeg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Untouched_Place_Hidden_High_At_Tassili_N_Ajjer_%28168020831%29.jpeg/1920px-Untouched_Place_Hidden_High_At_Tassili_N_Ajjer_%28168020831%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Untouched_Place_Hidden_High_At_Tassili_N_Ajjer_(168020831).jpeg",
+      "artist": "2 F Ī K Æ Ł T Ë R",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "500px provided description: Tassili N'Ajjer national park is the place where you can find so many patterns of the desert in a relatively small place, located in the South east of Algeria [#sky ,#rocks ,#sand ,#desert ,#dunes ,#sahara ,#national park ,#algeria ,#djanet ,#algerie ,#illizi ,#Tassili n'ajjer]",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Esprit nomade.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Esprit_nomade.JPG/1920px-Esprit_nomade.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Esprit_nomade.JPG",
+      "artist": "Hamdanmourad",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Tuareg on the dune of Timerzouga, place named Tadrart in the town of Djanet, wilaya of Ilizi 20km from the Algerian-Libyan border (Cultural Park of Tassili).",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Cute Lezard Showing Off At Tassili N Ajjer (168099137).jpeg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Cute_Lezard_Showing_Off_At_Tassili_N_Ajjer_%28168099137%29.jpeg/1920px-Cute_Lezard_Showing_Off_At_Tassili_N_Ajjer_%28168099137%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Cute_Lezard_Showing_Off_At_Tassili_N_Ajjer_(168099137).jpeg",
+      "artist": "2 F Ī K Æ Ł T Ë R",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "500px provided description: Cute Lezard Showing Off At Tassili N Ajjer [#animal ,#desert ,#sahara ,#national park ,#Djanet ,#Tassili n'ajjer ,#Sefar]",
+      "mime": "image/jpeg"
+    }
+  ],
+  "tsingy": [
+    {
+      "title": "Tsingy de Bemaraha.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Tsingy_de_Bemaraha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source": "https://commons.wikimedia.org/wiki/File:Tsingy_de_Bemaraha.jpg",
+      "artist": "My father (who approves of its use)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "Tsingy de Bemaraha Strict Nature Reserve in Madagascar.",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Tsingy de Bemaraha, Madagascar.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Tsingy_de_Bemaraha%2C_Madagascar.jpg/1920px-Tsingy_de_Bemaraha%2C_Madagascar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:Tsingy_de_Bemaraha,_Madagascar.jpg",
+      "artist": "Cactus0625",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Tsingy de Bemaraha, Madagascar",
+      "mime": "image/jpeg"
+    },
+    {
+      "title": "Végétation Tsingy de Bemaraha, Madagascar.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/V%C3%A9g%C3%A9tation_Tsingy_de_Bemaraha%2C_Madagascar.jpg/1920px-V%C3%A9g%C3%A9tation_Tsingy_de_Bemaraha%2C_Madagascar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source": "https://commons.wikimedia.org/wiki/File:V%C3%A9g%C3%A9tation_Tsingy_de_Bemaraha,_Madagascar.jpg",
+      "artist": "Cactus0625",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Végétation Tsingy de Bemaraha, Madagascar",
+      "mime": "image/jpeg"
+    }
+  ]
+}

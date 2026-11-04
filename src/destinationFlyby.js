@@ -1,94 +1,20 @@
-import * as Cesium from 'cesium';
-
-// A camera-only virtual drone tour; imagery comes from the configured Cesium layers.
-const radians = Cesium.Math.toRadians;
-export function installDestinationFlybys(viewer, destinations, onState) {
-  let active = false;
-  let sequence = 0;
-  let suppressMove = false;
-  let lastAutoId = null;
-  const candidates = destinations.filter(d => Number.isFinite(d.lat) && Number.isFinite(d.lng));
-  const report = (name = '', flying = false) => onState({ name, flying });
-  function cancel() {
-    sequence += 1;
-    active = false;
-    viewer.camera.cancelFlight();
-    report();
-  }
-  function flyTo(destination) {
-    if (!destination || viewer.isDestroyed()) return;
-    sequence += 1;
-    const run = sequence;
-    active = true;
-    lastAutoId = destination.id;
-    report(destination.name, true);
-    const { lng, lat } = destination;
-    const stages = [
-      { height: 95000, heading: -25, pitch: -62, duration: 2.8 },
-      { height: 14500, heading: 20, pitch: -43, duration: 3.4 },
-      { height: 3800, heading: 75, pitch: -29, duration: 3.6 },
-      { height: 2100, heading: 140, pitch: -38, duration: 3.8 }
-    ];
-    function next(index) {
-      if (run !== sequence || viewer.isDestroyed()) return;
-      if (index >= stages.length) {
-        active = false;
-        report(destination.name, false);
-        return;
-      }
-      const stage = stages[index];
-      suppressMove = true;
-      viewer.camera.flyTo({
-        destination: Cesium.Cartesian3.fromDegrees(lng, lat, stage.height),
-        orientation: {
-          heading: radians(stage.heading),
-          pitch: radians(stage.pitch),
-          roll: 0
-        },
-        duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : stage.duration,
-        easingFunction: Cesium.EasingFunction.SINUSOIDAL_IN_OUT,
-        complete: () => {
-          suppressMove = false;
-          next(index + 1);
-        },
-        cancel: () => {
-          suppressMove = false;
-        }
-      });
-    }
-    next(0);
-  }
-  const selectionListener = entity => {
-    const destination = entity?.properties?.ryftlandsId?.getValue(Cesium.JulianDate.now());
-    const match = candidates.find(d => d.id === destination);
-    if (match) flyTo(match);
-  };
-  const zoomListener = () => {
-    if (active || suppressMove || viewer.isDestroyed()) return;
-    const position = viewer.camera.positionCartographic;
-    if (!position || position.height > 110000 || position.height < 400) {
-      if (position?.height > 180000) lastAutoId = null;
-      return;
-    }
-    const lon = Cesium.Math.toDegrees(position.longitude);
-    const lat = Cesium.Math.toDegrees(position.latitude);
-    const cameraPoint = Cesium.Cartesian3.fromDegrees(lon, lat);
-    const nearest = candidates.map(d => ({
-      d,
-      meters: Cesium.Cartesian3.distance(cameraPoint, Cesium.Cartesian3.fromDegrees(d.lng, d.lat))
-    })).sort((a, b) => a.meters - b.meters)[0];
-    if (nearest && nearest.meters < 70000 && nearest.d.id !== lastAutoId) flyTo(nearest.d);
-  };
-  viewer.selectedEntityChanged.addEventListener(selectionListener);
-  viewer.camera.moveEnd.addEventListener(zoomListener);
-  return {
-    flyTo,
-    cancel,
-    destroy() {
-      sequence += 1;
-      viewer.selectedEntityChanged.removeEventListener(selectionListener);
-      viewer.camera.moveEnd.removeEventListener(zoomListener);
-      if (!viewer.isDestroyed()) viewer.camera.cancelFlight();
-    }
-  };
+import * as C from 'cesium';
+// Each stage frames a fixed target, rather than looking away from the site.
+export function installDestinationFlybys(viewer,destinations,onState){
+ let sequence=0,active=false,lastAutoId=null,userMoved=false;
+ const report=(d,flying)=>onState({id:d?.id||'',name:d?.name||'',flying});
+ function cancel(){sequence++;active=false;viewer.camera.cancelFlight();report(null,false);}
+ function flyTo(d){if(!d||viewer.isDestroyed())return;const run=++sequence;active=true;userMoved=false;lastAutoId=d.id;
+ viewer.container.scrollIntoView({behavior:'instant',block:'start'});viewer.resize();report(d,true);
+ const target=C.Cartesian3.fromDegrees(d.lng,d.lat,0),sphere=new C.BoundingSphere(target,200);
+ const stages=[{range:90000,heading:-25,pitch:-65,duration:1.5},{range:14000,heading:20,pitch:-48,duration:2},{range:4500,heading:80,pitch:-40,duration:2}];
+ const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function next(i){if(run!==sequence||viewer.isDestroyed())return;if(i===stages.length){active=false;const end=stages.at(-1);viewer.camera.lookAt(target,new C.HeadingPitchRange(C.Math.toRadians(end.heading),C.Math.toRadians(end.pitch),end.range));viewer.camera.lookAtTransform(C.Matrix4.IDENTITY);viewer.scene.requestRender();report(d,false);return;}const s=stages[i];viewer.camera.flyToBoundingSphere(sphere,{offset:new C.HeadingPitchRange(C.Math.toRadians(s.heading),C.Math.toRadians(s.pitch),s.range),duration:reduced?0:s.duration,complete:()=>next(i+1)});}
+ if(reduced){const s=stages.at(-1);viewer.camera.lookAt(target,new C.HeadingPitchRange(C.Math.toRadians(s.heading),C.Math.toRadians(s.pitch),s.range));viewer.camera.lookAtTransform(C.Matrix4.IDENTITY);active=false;viewer.scene.requestRender();report(d,false);}else next(0);
+ }
+ const select=e=>{const id=e?.properties?.ryftlandsId?.getValue(C.JulianDate.now());const d=destinations.find(d=>d.id===id);if(d)flyTo(d);};
+ const zoom=()=>{if(active||!userMoved||viewer.isDestroyed())return;userMoved=false;const p=viewer.camera.positionCartographic;if(p.height>110000){if(p.height>180000)lastAutoId=null;return;}if(p.height<400)return;const at=C.Cartesian3.fromRadians(p.longitude,p.latitude);const nearest=destinations.map(d=>({d,dist:C.Cartesian3.distance(at,C.Cartesian3.fromDegrees(d.lng,d.lat))})).sort((a,b)=>a.dist-b.dist)[0];if(nearest&&nearest.dist<70000&&nearest.d.id!==lastAutoId)flyTo(nearest.d);};
+ const markUserMove=()=>{userMoved=true;};viewer.scene.canvas.addEventListener("wheel",markUserMove,{passive:true});viewer.scene.canvas.addEventListener("pointerdown",markUserMove);
+ viewer.selectedEntityChanged.addEventListener(select);viewer.camera.moveEnd.addEventListener(zoom);
+ return {flyTo,cancel,destroy(){sequence++;viewer.scene.canvas.removeEventListener("wheel",markUserMove);viewer.scene.canvas.removeEventListener("pointerdown",markUserMove);viewer.selectedEntityChanged.removeEventListener(select);viewer.camera.moveEnd.removeEventListener(zoom);if(!viewer.isDestroyed())viewer.camera.cancelFlight();}};
 }

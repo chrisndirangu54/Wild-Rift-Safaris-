@@ -1,0 +1,56 @@
+:root {
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* The header remains usable as the destination catalog grows. */
+header { min-width: 0; }
+header nav { min-width: 0; flex: 1; overflow-x: auto; align-items: center; gap: 24px; scrollbar-width: thin; scrollbar-color: #657267 transparent; }
+header nav a { flex-shrink: 0; padding: 14px 0; white-space: nowrap; position: relative; }
+header > .login { flex-shrink: 0; }
+header nav a::after { content: ''; position: absolute; bottom: 7px; left: 0; right: 0; height: 1px; background: #d4b77b; transform: scaleX(0); transform-origin: left; transition: transform 180ms var(--ease-out); }
+:is(a, button, input, select, textarea):focus-visible { outline: 2px solid #d4b77b; outline-offset: 5px; }
+section[id] { scroll-margin-top: 24px; }
+
+.scenic-home [data-reveal] { transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out); }
+.scenic-home [data-reveal="waiting"] { opacity: 0; transform: translateY(18px); }
+.scenic-home [data-reveal="visible"] { opacity: 1; transform: none; }
+.scenic-home [data-reveal]:focus-within { opacity: 1; transform: none; transition: none; }
+
+:is(.primary, .secondary, .login, .outlineBtn, .filters button) {
+  transition: transform 160ms var(--ease-out), background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+.primary svg { transition: transform 180ms var(--ease-out); }
+.destination img { transition: transform 600ms var(--ease-out); }
+.destination a { display: inline-flex; min-height: 40px; align-items: center; }
+.globe-motion { position: absolute; right: 24px; top: 24px; min-height: 44px; padding: 10px 16px; border: 1px solid #657267; border-radius: 24px; background: #111b17cc; color: #d5c29b; font-size: 11px; letter-spacing: .04em; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > * { animation: scenic-enter 600ms var(--ease-out) both; }
+  .hero-copy > :nth-child(2) { animation-delay: 50ms; }
+  .hero-copy > :nth-child(3) { animation-delay: 100ms; }
+  .hero-copy > :nth-child(4) { animation-delay: 150ms; }
+  .hero-copy > :nth-child(5) { animation-delay: 200ms; }
+  .hero .earth { animation: earth-enter 800ms var(--ease-out) both; }
+  :is(.primary, .secondary, .login, .outlineBtn, .filters button):active { transform: scale(.97); transition-duration: 100ms; }
+}
+@keyframes scenic-enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes earth-enter { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: none; } }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  header nav a:hover::after { transform: scaleX(1); }
+  .primary:hover svg { transform: translateX(3px); }
+  .destination:hover img { transform: scale(1.035); }
+  :is(.secondary, .login, .outlineBtn):hover { border-color: #d4b77b; transform: translateY(-2px); }
+}
+@media (max-width: 900px) {
+  header { height: auto; padding-top: 16px; padding-bottom: 10px; flex-wrap: wrap; gap: 12px; }
+  header nav { display: flex; flex: 1 0 100%; order: 3; gap: 22px; }
+  header nav a { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .scenic-home [data-reveal] { opacity: 1; transform: none; transition: opacity 160ms ease; transition-delay: 0ms !important; }
+  .hero-copy > *, .hero .earth, .cameraScreen svg { animation: none; }
+  .destination img, .primary svg, header nav a::after { transition: none; }
+  :is(.primary, .secondary, .login, .outlineBtn, .filters button) { transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease; }
+}

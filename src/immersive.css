@@ -1,0 +1,46 @@
+:root{--curve-scenic:40px;--curve-card:24px;--curve-control:14px}
+.primary,.secondary,.login,.outlineBtn{border-radius:var(--curve-control)}
+.panel,.destination,.modeGrid article,.cameraCard,.dashboardGrid article,.questGrid article,.rhythmGrid article,.wellnessGrid article,.gameGrid article,.badgeGrid article,.contextRibbon span,.accomplishmentGrid article{border-radius:var(--curve-card)}
+.page .panel,.scenic-home .destination,.scenic-home .modeGrid article,.page .cameraCard,.page .questGrid article,.page .rhythmGrid article{border-radius:var(--curve-card)}
+.page .panel input,.page .panel select,.page .panel textarea{border-radius:12px}
+.panel input,.panel select,.panel textarea,.questControls input,.questControls select{border-radius:12px}
+.destination{isolation:isolate;box-shadow:0 15px 40px #00000018}
+.hero{position:relative;isolation:isolate;border-radius:0 0 64px 64px;margin-bottom:20px}
+.hero-copy{z-index:2}.hero .earth{z-index:1}
+.parallax-landscape{position:absolute;inset:-60px 0;z-index:-1;pointer-events:none;transform:scale(1.16)}
+.parallax-landscape img{width:100%;height:100%;object-fit:cover;opacity:.48}
+.parallax-landscape>div{position:absolute;inset:0;background:linear-gradient(90deg,#0d1c16f5 5%,#102219b0 55%,#0c1b1444),linear-gradient(0deg,#111b17,transparent 55%)}
+.hero .earth canvas{cursor:grab}.hero .earth canvas:active{cursor:grabbing}
+.landscape-carousel{margin:65px 6%;perspective:1400px;min-width:0}
+.landscape-stage{position:relative;isolation:isolate;min-height:530px;overflow:hidden;border:1px solid #d4b77b45;border-radius:var(--curve-scenic);background:#263a2b;box-shadow:0 35px 80px #0004}
+.landscape-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 900ms ease;pointer-events:none}
+.landscape-photo.is-active{opacity:1;animation:landscape-drift 10000ms linear both}
+.landscape-carousel[data-still=true] .landscape-photo{animation-play-state:paused}
+@keyframes landscape-drift{from{transform:scale(1.09)}to{transform:scale(1)}}
+.landscape-shade{position:absolute;inset:0;background:linear-gradient(90deg,#09160ded,#09160d77 60%,#09160d11),linear-gradient(0deg,#09160ddd,transparent 50%)}
+.landscape-copy{position:relative;padding:70px 7% 125px;max-width:750px;animation:landscape-story 800ms var(--ease-out) both}
+.landscape-kicker{display:block;color:#eed9ad;font-size:12px;margin-bottom:24px;letter-spacing:.08em}
+.landscape-copy h2{font-size:clamp(36px,5vw,68px);line-height:1.08;margin-bottom:20px}
+.landscape-copy p{font-size:16px;line-height:1.8;color:#e0e4d8;max-width:480px}
+.landscape-meta{display:flex;gap:9px;flex-wrap:wrap;margin:24px 0}.landscape-meta span{padding:8px 12px;background:#ffffff12;border:1px solid #ffffff30;border-radius:30px;font-size:11px}
+.landscape-controls{position:absolute;left:7%;bottom:35px;display:flex;gap:14px;align-items:center;font-size:12px;color:#e8d9b9}
+.landscape-controls button{width:46px;height:46px;background:#102018aa;border:1px solid #e8d9b977;border-radius:50%;color:#fff;font-size:20px;transition:transform 160ms var(--ease-out),background-color 160ms ease}
+.photo-license{position:absolute;right:25px;bottom:25px;max-width:210px;font-size:10px;color:#e0dfd3;line-height:1.5;text-align:right}
+.landscape-thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:18px;min-width:0}
+.landscape-thumbs button{min-width:0;display:flex;align-items:center;gap:10px;border:1px solid #3e5746;border-radius:16px;background:#1b2c22;color:#bfccbe;text-align:left;padding:8px;font-size:10px;transition:transform 180ms var(--ease-out),border-color 180ms ease,background-color 180ms ease}
+.landscape-thumbs button[aria-pressed=true]{border-color:#d4b77b;background:#304333;color:#f4e7cd}
+.landscape-thumbs img{height:46px;width:46px;object-fit:cover;border-radius:10px;flex-shrink:0}
+.quest-page .landscape-carousel{margin:35px 0 45px}.quest-page .landscape-stage{min-height:460px}
+.quest-page .landscape-copy{padding-top:45px;padding-bottom:110px}
+.quest-page>h1{max-width:1000px}.quest-page .questControls{border:1px solid #d4b77b50;background:linear-gradient(120deg,#2b4030,#172b21)}
+@keyframes landscape-story{from{opacity:0;transform:translate3d(30px,0,0) rotateY(8deg)}to{opacity:1;transform:none}}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .destination{transition:transform 300ms var(--ease-out);transform-style:preserve-3d}
+ .destination:hover{transform:perspective(1000px) translateY(-8px) rotateX(2deg)}
+ .landscape-thumbs button:hover{transform:translateY(-4px)}
+ .landscape-controls button:hover{transform:scale(1.08);background:#3c5139}
+ .modeGrid article{transition:transform 300ms var(--ease-out)}.modeGrid article:hover{transform:perspective(900px) rotateY(-3deg) translateY(-5px)}
+}
+@media(max-width:900px){.landscape-thumbs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:5px 0 12px}.landscape-thumbs button{flex:0 0 165px;scroll-snap-align:start}.landscape-stage{min-height:520px}.landscape-copy{padding-top:45px}.hero{border-radius:0 0 40px 40px}}
+@media(max-width:550px){.landscape-carousel{margin:35px 5%}.landscape-stage{border-radius:28px}.landscape-copy{padding:35px 24px 145px}.landscape-copy h2{font-size:40px}.landscape-copy p{font-size:14px}.landscape-controls{left:24px;bottom:60px;gap:10px}.photo-license{bottom:18px;right:24px;text-align:left;left:24px;max-width:none}.landscape-shade{background:linear-gradient(90deg,#09160de0,#09160d55),linear-gradient(0deg,#09160df5,transparent)}.quest-page .landscape-copy{padding-bottom:145px}.hero{border-radius:0 0 32px 32px}}
+@media(prefers-reduced-motion:reduce){.parallax-landscape{transform:none}.landscape-photo,.landscape-photo.is-active{animation:none;transform:none;transition:opacity 160ms ease}.landscape-copy{animation:none}.landscape-thumbs button,.landscape-controls button{transition:background-color 160ms ease,border-color 160ms ease}}

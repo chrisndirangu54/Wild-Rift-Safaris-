@@ -104,3 +104,7 @@ A Strapi 5 project lives under `/strapi`. It includes `Article` and `Content Goa
 The super-admin route `/admin/content` loads seasonal context and active Strapi business goals and creates reviewable content-generation jobs. Cloud Functions expose `contentSignals`, `generateBlogDraft` and `pushDraftToStrapi`. Required server secrets are `STRAPI_API_TOKEN` and `CONTENT_LLM_API_KEY`; `STRAPI_URL` is a server environment value. The LLM provider endpoint/model mapper remains provider-neutral so a free/self-hosted model or paid API can be selected without changing the CMS/front end.
 
 Generated content must remain draft-first. Do not automatically publish factual claims about wildlife sightings, conservation partners, prices, availability, safety, visas, health, communities or cultural practices without verification.
+
+## Search and itinerary release
+The production build generates route-specific crawlable HTML, canonical and social metadata, JSON-LD, sitemap.xml, robots.txt and llms.txt. Private traveller/admin routes are noindex and omitted from the sitemap. Run node scripts/verify-release.mjs after a production build to verify the metadata and route-builder checks.
+The itinerary planner uses Firebase AI Logic with Gemini and enforced App Check. VITE_RECAPTCHA_ENTERPRISE_SITE_KEY is a public website key; do not put a Gemini API secret in Vite variables. A local catalogue route is explicitly labelled when AI is unavailable. No itinerary confirms a booking, quote, transfer time or wildlife sighting.
