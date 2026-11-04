@@ -83,3 +83,11 @@
 .globeStudio section .globeStops button{padding:4px 9px;margin:4px 0}
 @media(max-width:900px){.globeWorkspace{grid-template-columns:1fr}.globeWorkspace>.cesiumWorld{min-height:500px;height:500px}.globeStudio{max-height:none;overflow:visible}}
 @media(max-width:520px){.globeStudioFields{grid-template-columns:1fr}}
+
+/* Navigation between the 3D globe and destination detail pages */
+.globeDestinationActions{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}
+.globeDestinationActions button,.globeDestinationActions a{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;font-size:12px;font-weight:700;border:1px solid #c5a873;border-radius:3px}
+.globeDestinationActions button{background:#c5a873;color:#15241b}
+.globeDestinationActions a{background:transparent;color:#e3c98d}
+.detailHero .back{margin-right:18px}
+.detailBody aside .outlineBtn{display:inline-flex;margin-top:12px}
