@@ -1,0 +1,7 @@
+import assert from 'node:assert/strict';import {build} from 'esbuild';
+import {animalJourneyPreferences,animalJourneyDestinations} from '../src/animalJourneys.js';
+const {outputFiles}=await build({entryPoints:['src/itineraryEngine.js'],bundle:true,platform:'node',format:'esm',write:false});const {buildLocalItinerary}=await import('data:text/javascript;base64,'+Buffer.from(outputFiles[0].text).toString('base64'));
+const fish=animalJourneyPreferences(new URLSearchParams('species=lionfish&destination=tsingy&days=7&pace=slow'));assert.equal(fish.destinationId,'coast');assert.equal(fish.interest,'Water');assert.equal(fish.days,7);assert.equal(fish.pace,'slow');assert.match(fish.notes,/Lionfish|lionfish/);
+for(const species of Object.keys(animalJourneyDestinations)){const prefs=animalJourneyPreferences(new URLSearchParams({species,destination:'giza',days:'4'}));const trip=buildLocalItinerary({...prefs,interest:'Origins'});assert.equal(trip.days.length,4);assert.ok(trip.days.every(d=>animalJourneyDestinations[species].includes(d.destinationId)));assert.match(trip.summary,/Sightings are not guaranteed/);}
+const general=animalJourneyPreferences(new URLSearchParams('species=unknown&destination=giza&days=200'));assert.equal(general.species,'');assert.equal(general.destinationId,'giza');assert.equal(general.days,14);
+console.log('PASS: animal context, duration and pace handoff; habitat-only local routes; invalid species and destination handling.');
